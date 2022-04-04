@@ -18,34 +18,34 @@ const Header = (props) => {
     const is_session = sessionStorage.getItem(_session_key) ? true : false;
     console.log(is_session);
 
-    // console.log(_session_key);
+    console.log(is_login);
     // console.log(sessionStorage.getItem(_session_key));
 
-    // if (is_login && is_session) {
-    //     return (
-            
-    //     )
-    // }
+    if (is_login && is_session) {
+        return (
+            <React.Fragment>
+                <Grid is_flex padding="4px 16px">
+                    <Grid>
+                        <Text margin="0px" size="24px" bold>헬로</Text>
+                    </Grid>
+                    
+                    <Grid is_flex>
+                        <Button text="내정보"></Button>
+                        <Button text="알림"></Button>
+                        <Button text="로그아웃" 
+                            _onClick={() => {
+                            dispatch(userActions.logoutFB({}));
+                            }}
+                        ></Button>
+                    </Grid>
+                </Grid>
+            </React.Fragment>
+        )
+    }
     
-    <Permit>
-        <React.Fragment>
-            <Grid is_flex padding="4px 16px">
-                <Grid>
-                    <Text margin="0px" size="24px" bold>헬로</Text>
-                </Grid>
-                
-                <Grid is_flex>
-                    <Button text="내정보"></Button>
-                    <Button text="알림"></Button>
-                    <Button text="로그아웃" 
-                        _onClick={() => {
-                        dispatch(userActions.logOut({}));
-                        }}
-                    ></Button>
-                </Grid>
-            </Grid>
-        </React.Fragment>
-    </Permit>;
+
+    
+
 
     return (
         <React.Fragment>
