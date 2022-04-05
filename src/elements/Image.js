@@ -32,7 +32,7 @@ const Image = (props) => {
 
 Image.defaultProps = {
   shape: "circle",
-  src: "https://i.pinimg.com/originals/9c/8d/88/9c8d885d3ad633d81d8a44e151161a6f.jpg",
+  src: "https://imgnews.pstatic.net/image/076/2022/04/05/2022040501000313400018701_20220405075004285.jpg?type=w647",
   size: 36,
 };
 

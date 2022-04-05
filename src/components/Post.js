@@ -27,7 +27,7 @@ const Post = (props) => {
             <Image shape="rectangle" src={props.src} />
           </Grid>
           <Grid padding="16px">
-            <Text bold>댓글 {props.comment_cnt}개</Text>
+            <Text margin="0px" bold>댓글 {props.comment_cnt}개</Text>
           </Grid>
         </Grid>
       </React.Fragment>
@@ -36,11 +36,11 @@ const Post = (props) => {
 
 Post.defaultProps = {
   user_info: {
-    user_name: "mean0",
-    user_profile: "https://i.pinimg.com/originals/9c/8d/88/9c8d885d3ad633d81d8a44e151161a6f.jpg",
+    user_name: "romero",
+    user_profile: "https://imgnews.pstatic.net/image/076/2022/04/05/2022040501000313400018701_20220405075004285.jpg?type=w647",
   },
-  image_url: "https://i.pinimg.com/originals/9c/8d/88/9c8d885d3ad633d81d8a44e151161a6f.jpg",
-  contents: "고양이네요!",
+  image_url: "https://imgnews.pstatic.net/image/076/2022/04/05/2022040501000313400018701_20220405075004285.jpg?type=w647",
+  contents: "볼 경합중인 토트넘의 수비수 로메로",
   comment_cnt: 10,
   insert_dt: "2021-02-27 10:00:00",
 };
