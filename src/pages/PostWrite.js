@@ -51,7 +51,7 @@ const PostWrite = (props) => {
       <Grid margin="100px 0" padding="16px" center>
         <Text size="32px" bold>앗! 잠깐, </Text>
         <Text size="16px">로그인 후에만 글을 쓸 수 있어요!</Text>
-        <Button _onClick={() => {history.replace("/");}}>로그인하러 가기</Button>
+        <Button _onClick={() => {history.replace("/login");}}>로그인하러 가기</Button>
       </Grid>
     )
   }
